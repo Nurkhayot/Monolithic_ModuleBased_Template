@@ -1,0 +1,31 @@
+{
+  "name": "monolithic_modulebased_template",
+  "version": "1.0.0",
+  "description": "Module based template",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nurkhayot/Monolithic_ModuleBased_Template.git"
+  },
+  "author": "Nurxayot Mansurov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nurkhayot/Monolithic_ModuleBased_Template/issues"
+  },
+  "homepage": "https://github.com/Nurkhayot/Monolithic_ModuleBased_Template#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
