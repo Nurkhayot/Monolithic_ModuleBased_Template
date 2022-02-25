@@ -10,8 +10,8 @@ app
   .use(cookieParser())
   .use(cors());
 
-const login = require("./modules/login/route");
-const users = require("./modules/users/route");
+const login = require("./login/route");
+const users = require("./users/route");
 
 app.use("/login", login);
 app.use("/users", users);

@@ -3,18 +3,6 @@ const { DATABASE } = require("../../config/config");
 
 const pool = new Pool(DATABASE);
 
-pool.connect((err, c) => {
-  if (!err) {
-    c.on("notification", (payload) => {
-      console.log(payload);
-    });
-
-    c.query("listen group_must_be_opened");
-  } else {
-    console.log(err);
-  }
-});
-
 const fetch = async (SQL, ...params) => {
   const client = await pool.connect();
 
